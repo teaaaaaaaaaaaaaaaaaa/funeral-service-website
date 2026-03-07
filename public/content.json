@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Restoran Sedef – Sala za Parastose Orlovača | Beograd",
+    "description": "Restoran Sedef – dostojanstvena sala za parastose pored groblja Orlovača u Beogradu. 80 mesta, sopstvena kuhinja, mrsni i posni meni. Rezervacija telefonom.",
+    "ogImage": "/images/og-image.jpg",
+    "canonical": "https://www.restoran-sedef.rs"
+  },
+  "hero": {
+    "images": [
+      "/images/exterior-01.jpg",
+      "/images/exterior-02.jpg"
+    ],
+    "title": "Restoran za Parastose Orlovača",
+    "subtitle": "Dostojanstveno i organizovano mesto za parastose – pored groblja Orlovača, Beograd",
+    "cta": "Pozovite za rezervaciju"
+  },
+  "about": {
+    "title": "O Restoranu",
+    "text": "Restoran Sedef je specijalizovan za organizaciju parastosa i pomen trpeza. Nalazimo se neposredno pored groblja Orlovača u Beogradu, što nam omogućava da porodicama pružimo dostojanstvenu i organizovanu proslavu sećanja na voljene. Raspolažemo sopstvenom kuhinjom i kapacitetom od 80 mesta, sa potpunom organizacijom trpeze. Nudimo dve vrste menija – posni i mrsni – prilagođene svakoj prilici.",
+    "highlights": [
+      { "label": "80 mesta", "icon": "users" },
+      { "label": "Sopstvena kuhinja", "icon": "chef" },
+      { "label": "Otvoreno 07 – 20h", "icon": "clock" }
+    ]
+  },
+  "menus": [
+    {
+      "id": "mrsni",
+      "name": "Mrsni meni",
+      "price": "XX.XX0",
+      "currency": "RSD",
+      "priceLabel": "po osobi",
+      "items": [
+        { "course": "Predjelo", "description": "Mešano domaće predjelo", "image": null },
+        { "course": "Supa", "description": "Pileća supa sa rezancima", "image": null },
+        { "course": "Glavno jelo", "description": "Pečeno pile sa prilogom", "image": null },
+        { "course": "Salata", "description": "Mešana sezonska salata", "image": null },
+        { "course": "Hleb", "description": "Domaći hleb", "image": null },
+        { "course": "Piće", "description": "Bezalkoholno piće", "image": null },
+        { "course": "Kolač", "description": "Domaći kolači", "image": null }
+      ]
+    },
+    {
+      "id": "posni",
+      "name": "Posni meni",
+      "price": "XX.XX0",
+      "currency": "RSD",
+      "priceLabel": "po osobi",
+      "items": [
+        { "course": "Predjelo", "description": "Posno mešano predjelo", "image": null },
+        { "course": "Čorba", "description": "Posna čorba od povrća", "image": null },
+        { "course": "Glavno jelo", "description": "Punjene paprike (posne)", "image": null },
+        { "course": "Salata", "description": "Mešana salata", "image": null },
+        { "course": "Hleb", "description": "Posni hleb", "image": null },
+        { "course": "Piće", "description": "Bezalkoholno piće", "image": null },
+        { "course": "Kolač", "description": "Posni kolači", "image": null }
+      ]
+    }
+  ],
+  "extras": [
+    { "name": "Kafa", "price": "po dogovoru" },
+    { "name": "Piće (alkoholno)", "price": "po dogovoru" },
+    { "name": "Torta po narudžbini", "price": "po dogovoru" }
+  ],
+  "location": {
+    "title": "Lokacija",
+    "address": "Groblje Orlovača 28, Beograd",
+    "city": "Beograd",
+    "district": "Rakovica",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2833.3!2d20.45!3d44.76!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDQ1JzM2LjAiTiAyMMKwMjcnMDAuMCJF!5e0!3m2!1ssr!2srs!4v1234567890",
+    "mapDirectionsUrl": "https://maps.google.com/?q=Groblje+Orlova%C4%8Da+28+Beograd",
+    "highlights": [
+      { "label": "Direktan ulaz", "icon": "door" },
+      { "label": "Parking dostupan", "icon": "parking" },
+      { "label": "Pored groblja Orlovača", "icon": "location" }
+    ]
+  },
+  "faq": [
+    {
+      "id": "faq-1",
+      "question": "Koliki je kapacitet restorana?",
+      "answer": "Restoran Sedef ima kapacitet od 80 mesta. Za grupe veće od 80 osoba, molimo Vas da nas kontaktirate telefonom kako bismo pronašli odgovarajuće rešenje."
+    },
+    {
+      "id": "faq-2",
+      "question": "Da li je potrebna rezervacija?",
+      "answer": "Da, preporučujemo rezervaciju unapred. Možete nas pozvati na telefon svakog dana od 07 do 23 sata. Rezervacija obezbeđuje organizovanu i dostojanstvenu trpezu bez brige."
+    },
+    {
+      "id": "faq-3",
+      "question": "Koje je radno vreme restorana?",
+      "answer": "Restoran je otvoren svakog dana od 07 do 20 sati. Rezervacije i dogovori su mogući telefonom od 07 do 23 sata."
+    },
+    {
+      "id": "faq-4",
+      "question": "Da li postoji parking?",
+      "answer": "Da, restoran raspolaže parking mestima. Ulaz i parking su dostupni direktno pored restorana, što olakšava dolazak i za starije goste."
+    },
+    {
+      "id": "faq-5",
+      "question": "Da li organizujete i druge događaje osim parastosa?",
+      "answer": "Pored parastosa, restoran je otvoren i za svakodnevne goste – kafa, piće i obroci. Za druge privatne svečanosti molimo Vas da nas kontaktirate telefonom."
+    }
+  ],
+  "contact": {
+    "title": "Kontakt",
+    "phone": "+381653030302",
+    "phoneDisplay": "065 303 0 302",
+    "reservationHours": "07 – 23h",
+    "workingHours": "07 – 20h",
+    "email": "restoran.sedef1@gmail.com",
+    "address": "Groblje Orlovača 28, Beograd"
+  },
+  "footer": {
+    "name": "Restoran Sedef",
+    "tagline": "Restoran za parastose i pomen trpeze pored groblja Orlovača u Beogradu. Sopstvena kuhinja, 80 mesta i potpuna organizacija.",
+    "address": "Groblje Orlovača 28, Beograd",
+    "phone": "+381653030302",
+    "phoneDisplay": "065 303 0 302",
+    "email": "restoran.sedef1@gmail.com",
+    "workingHours": "07:00 – 20:00",
+    "reservationHours": "07:00 – 23:00",
+    "copyright": "2026 Restoran Sedef. Sva prava zadržana.",
+    "mapsUrl": "https://maps.google.com/?q=Groblje+Orlova%C4%8Da+28+Beograd"
+  }
+}

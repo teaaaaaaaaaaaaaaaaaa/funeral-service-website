@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    @apply bg-sedef-darkest text-sedef-light;
+  }
+
+  body {
+    @apply font-garamond antialiased;
+  }
+
+  h1 {
+    @apply font-playfair;
+  }
+
+  h2 {
+    @apply font-playfair;
+  }
+
+  h3 {
+    @apply font-playfair;
+  }
+
+  p {
+    @apply font-garamond text-sedef-light leading-relaxed;
+  }
+
+  *:focus-visible {
+    @apply outline-none ring-2 ring-sedef-light ring-offset-2 ring-offset-sedef-darkest;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-content mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+
+  .btn-primary {
+    @apply font-lato font-bold tracking-wide bg-transparent border border-sedef-light text-sedef-lightest py-4 px-10 transition-all duration-300 hover:bg-sedef-light hover:text-sedef-darkest min-h-[52px] inline-flex items-center justify-center gap-2;
+  }
+
+  .btn-call {
+    @apply font-lato font-bold tracking-wide bg-sedef-dark border border-sedef-mid text-sedef-lightest py-3 px-8 transition-all duration-300 hover:bg-sedef-mid hover:border-sedef-light min-h-[48px] inline-flex items-center justify-center gap-2;
+  }
+
+  .section-divider {
+    @apply w-16 h-px bg-sedef-mid mx-auto mt-4 mb-12;
+  }
+
+  .animate-on-scroll {
+    @apply opacity-0 translate-y-6 transition-all duration-700 ease-out;
+  }
+
+  .animate-on-scroll.visible {
+    @apply opacity-100 translate-y-0;
+  }
+}

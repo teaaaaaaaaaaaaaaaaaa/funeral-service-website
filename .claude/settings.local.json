@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(identify \"c:/Users/Tea/memorial-service-restaurant-website/20260220_094500.jpg\")",
+      "Bash(npm install)",
+      "Bash(npm run build)",
+      "Bash(copy \"c:\\\\Users\\\\INSOMNIA\\\\memorial-service-restaurant-website\\\\Logo.png\" \"c:\\\\Users\\\\INSOMNIA\\\\memorial-service-restaurant-website\\\\public\\\\images\\\\favicon.png\")"
+    ]
+  }
+}
