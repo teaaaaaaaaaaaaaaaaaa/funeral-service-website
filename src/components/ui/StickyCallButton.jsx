@@ -8,21 +8,20 @@ export default function StickyCallButton({ phone }) {
       className="
         fixed bottom-6 right-5 z-50
         md:hidden
-        w-14 h-14 rounded-full
-        bg-sedef-dark border border-sedef-mid
+        w-14 h-14
+        bg-antic-gold
         flex items-center justify-center
-        shadow-lg shadow-black/40
+        shadow-lg shadow-black/50
         transition-all duration-300
-        hover:bg-sedef-mid hover:scale-110
+        hover:bg-antic-bronze hover:scale-110
         active:scale-95
       "
     >
-      {/* Phone icon SVG */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="currentColor"
-        className="w-6 h-6 text-sedef-lightest"
+        className="w-6 h-6 text-antic-black"
         aria-hidden="true"
       >
         <path
