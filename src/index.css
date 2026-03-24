@@ -5,60 +5,129 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    @apply bg-sedef-darkest text-sedef-light;
   }
 
   body {
-    @apply font-garamond antialiased;
+    @apply bg-antic-black text-antic-light font-garamond antialiased;
   }
 
-  h1 {
-    @apply font-playfair;
+  h1, h2, h3 {
+    @apply font-playfair text-antic-cream;
   }
 
-  h2 {
-    @apply font-playfair;
-  }
-
-  h3 {
-    @apply font-playfair;
+  h4, h5, h6 {
+    @apply font-playfair text-antic-gold-light;
   }
 
   p {
-    @apply font-garamond text-sedef-light leading-relaxed;
+    @apply font-garamond leading-relaxed;
   }
 
   *:focus-visible {
-    @apply outline-none ring-2 ring-sedef-light ring-offset-2 ring-offset-sedef-darkest;
+    @apply outline-none ring-2 ring-antic-gold ring-offset-2 ring-offset-antic-black;
   }
 }
 
 @layer components {
+
+  /* ── Layout ────────────────────────────────── */
   .section-container {
-    @apply max-w-content mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-content mx-auto px-5 md:px-10 lg:px-16;
   }
 
   .section-padding {
     @apply py-20 md:py-28;
   }
 
-  .btn-primary {
-    @apply font-lato font-bold tracking-wide bg-transparent border border-sedef-light text-sedef-lightest py-4 px-10 transition-all duration-300 hover:bg-sedef-light hover:text-sedef-darkest min-h-[52px] inline-flex items-center justify-center gap-2;
-  }
-
-  .btn-call {
-    @apply font-lato font-bold tracking-wide bg-sedef-dark border border-sedef-mid text-sedef-lightest py-3 px-8 transition-all duration-300 hover:bg-sedef-mid hover:border-sedef-light min-h-[48px] inline-flex items-center justify-center gap-2;
-  }
-
   .section-divider {
-    @apply w-16 h-px bg-sedef-mid mx-auto mt-4 mb-12;
+    @apply border-0 border-t border-antic-border my-0;
   }
 
+  /* ── Marble section bg ─────────────────────── */
+  .section-marble {
+    @apply bg-antic-marble relative overflow-hidden;
+  }
+
+  .section-marble::before {
+    content: '';
+    @apply absolute inset-0 pointer-events-none;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='500'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.55' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='500' height='500' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* ── Buttons ───────────────────────────────── */
+  .btn-gold {
+    @apply inline-flex items-center gap-2 px-8 py-3.5
+           font-lato text-sm tracking-[0.12em] uppercase font-medium
+           bg-antic-gold text-antic-black
+           transition-all duration-300
+           hover:bg-antic-bronze hover:text-antic-cream;
+  }
+
+  .btn-outline-gold {
+    @apply inline-flex items-center gap-2 px-8 py-3.5
+           font-lato text-sm tracking-[0.12em] uppercase font-medium
+           border border-antic-gold text-antic-gold
+           transition-all duration-300
+           hover:bg-antic-gold hover:text-antic-black;
+  }
+
+  /* ── Cards ─────────────────────────────────── */
+  .card-dark {
+    @apply bg-antic-dark border border-antic-border
+           p-6 md:p-8
+           transition-all duration-300
+           hover:border-antic-gold/40 hover:-translate-y-0.5;
+  }
+
+  /* ── Animate on scroll ─────────────────────── */
   .animate-on-scroll {
     @apply opacity-0 translate-y-6 transition-all duration-700 ease-out;
   }
 
   .animate-on-scroll.visible {
     @apply opacity-100 translate-y-0;
+  }
+
+  /* ── Section label ─────────────────────────── */
+  .section-label {
+    @apply font-lato text-xs tracking-[0.25em] uppercase text-antic-gold mb-3 block;
+  }
+
+  /* ── Nav link ──────────────────────────────── */
+  .nav-link {
+    @apply font-lato text-sm tracking-[0.08em] uppercase
+           text-antic-light transition-colors duration-200
+           hover:text-antic-gold relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute -bottom-0.5 left-0 w-0 h-px bg-antic-gold
+           transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  /* ── Equipment filter tabs ─────────────────── */
+  .filter-tab {
+    @apply px-5 py-2.5 font-lato text-sm tracking-wide
+           border border-antic-border text-antic-muted
+           transition-all duration-200
+           hover:border-antic-gold/50 hover:text-antic-gold;
+  }
+
+  .filter-tab.active {
+    @apply border-antic-gold text-antic-cream bg-antic-gold/10;
+  }
+
+  /* ── Step circle for procedure ─────────────── */
+  .step-circle {
+    @apply w-11 h-11 rounded-full border-2 border-antic-gold
+           flex items-center justify-center flex-shrink-0
+           font-playfair text-antic-gold text-base font-semibold
+           bg-antic-dark;
   }
 }

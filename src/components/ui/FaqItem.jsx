@@ -1,6 +1,6 @@
 export default function FaqItem({ item, isOpen, onToggle }) {
   return (
-    <div className="border-b border-sedef-mid/30">
+    <div className="border-b border-antic-border">
       <dt>
         <button
           onClick={onToggle}
@@ -10,10 +10,10 @@ export default function FaqItem({ item, isOpen, onToggle }) {
           className="
             w-full flex items-center justify-between
             py-5 text-left
-            font-playfair text-xl text-sedef-lightest
+            font-playfair text-lg md:text-xl text-antic-cream
             transition-colors duration-200
-            hover:text-sedef-light
-            focus-visible:outline-none focus-visible:text-sedef-light
+            hover:text-antic-gold
+            focus-visible:outline-none focus-visible:text-antic-gold
           "
         >
           <span>{item.question}</span>
@@ -23,7 +23,7 @@ export default function FaqItem({ item, isOpen, onToggle }) {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className={`w-5 h-5 flex-shrink-0 ml-4 text-sedef-muted transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+            className={`w-5 h-5 flex-shrink-0 ml-4 text-antic-gold transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
             aria-hidden="true"
           >
             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -37,7 +37,7 @@ export default function FaqItem({ item, isOpen, onToggle }) {
         className="overflow-hidden transition-all duration-400 ease-in-out"
         style={{ maxHeight: isOpen ? '500px' : '0' }}
       >
-        <p className="font-garamond text-lg text-sedef-light leading-relaxed pb-5 pt-1">
+        <p className="font-garamond text-lg text-antic-light leading-relaxed pb-5 pt-1">
           {item.answer}
         </p>
       </dd>

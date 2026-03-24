@@ -1,126 +1,318 @@
 {
   "seo": {
-    "title": "Restoran Sedef – Sala za Parastose Orlovača | Beograd",
-    "description": "Restoran Sedef – dostojanstvena sala za parastose pored groblja Orlovača u Beogradu. 80 mesta, sopstvena kuhinja, mrsni i posni meni. Rezervacija telefonom.",
-    "ogImage": "/images/og-image.jpg",
-    "canonical": "https://www.restoran-sedef.rs"
+    "title": "Pogrebno preduzeće Antić | Pogrebne usluge Beograd 0-24h",
+    "description": "Pogrebno preduzeće Antić pruža kompletne pogrebne usluge u Beogradu 24 sata, 7 dana u nedelji. Diskretna i profesionalna organizacija sahrane, kremacije i prevoza pokojnika.",
+    "canonical": "https://www.pogrebno-antic.rs",
+    "ogImage": "/images/og-image.jpg"
+  },
+  "business": {
+    "name": "Pogrebno preduzeće Antić",
+    "phone": "+381601234567",
+    "phoneDisplay": "060 123 45 67",
+    "email": "info@pogrebno-antic.rs",
+    "address": "Beograd, Srbija",
+    "workingHours": "00-24h, 365 dana",
+    "hours24_7": true
   },
   "hero": {
-    "images": [
-      "/images/exterior-01.jpg",
-      "/images/exterior-02.jpg"
-    ],
-    "title": "Restoran za Parastose Orlovača",
-    "subtitle": "Dostojanstveno i organizovano mesto za parastose – pored groblja Orlovača, Beograd",
-    "cta": "Pozovite za rezervaciju"
+    "title": "Saosećajna Podrška u Trenucima Oproštaja",
+    "subtitle": "Vaš Partner u Poštovanju Uspomena",
+    "cta": "Zakažite Konsultacije",
+    "ctaPhone": "Pozovite odmah"
   },
-  "about": {
-    "title": "O Restoranu",
-    "text": "Restoran Sedef je specijalizovan za organizaciju parastosa i pomen trpeza. Nalazimo se neposredno pored groblja Orlovača u Beogradu, što nam omogućava da porodicama pružimo dostojanstvenu i organizovanu proslavu sećanja na voljene. Raspolažemo sopstvenom kuhinjom i kapacitetom od 80 mesta, sa potpunom organizacijom trpeze. Nudimo dve vrste menija – posni i mrsni – prilagođene svakoj prilici.",
-    "highlights": [
-      { "label": "80 mesta", "icon": "users" },
-      { "label": "Sopstvena kuhinja", "icon": "chef" },
-      { "label": "Otvoreno 07 – 20h", "icon": "clock" }
-    ]
+  "pioBanner": {
+    "title": "Znate li da možete uštedeti 85.686 dinara?",
+    "amount": "85.686",
+    "description": "Na osnovu Zakona o PIO fondu, porodica pokojnika koji je bio osiguran ima pravo na jednokratnu novčanu pomoć. Naš tim vam pomaže da preuzmete svu neophodnu dokumentaciju i odmah ostvarite ovo pravo — iznos se odbija direktno od ukupne cene usluge.",
+    "cta": "Saznajte više"
   },
-  "menus": [
+  "whyUs": [
     {
-      "id": "mrsni",
-      "name": "Mrsni meni",
-      "price": "XX.XX0",
-      "currency": "RSD",
-      "priceLabel": "po osobi",
-      "items": [
-        { "course": "Predjelo", "description": "Mešano domaće predjelo", "image": null },
-        { "course": "Supa", "description": "Pileća supa sa rezancima", "image": null },
-        { "course": "Glavno jelo", "description": "Pečeno pile sa prilogom", "image": null },
-        { "course": "Salata", "description": "Mešana sezonska salata", "image": null },
-        { "course": "Hleb", "description": "Domaći hleb", "image": null },
-        { "course": "Piće", "description": "Bezalkoholno piće", "image": null },
-        { "course": "Kolač", "description": "Domaći kolači", "image": null }
+      "icon": "experience",
+      "title": "Višedecenijsko iskustvo",
+      "text": "Više od 30 godina pružamo usluge porodicama u najtežim trenucima. Naše iskustvo garantuje da svaki detalj bude pažljivo isplaniran."
+    },
+    {
+      "icon": "complete",
+      "title": "Kompletna usluga",
+      "text": "Od prvog kontakta do završnih administrativnih koraka — sve na jednom mestu. Ne morate brinuti ni o jednom detalju."
+    },
+    {
+      "icon": "discreet",
+      "title": "Diskretnost i poštovanje",
+      "text": "Svaki ispraćaj organizujemo s punim dostojanstvom i poštovanjem prema pokojniku i porodici. Vaša privatnost nam je prioritet."
+    },
+    {
+      "icon": "transparent",
+      "title": "Jasni i transparentni uslovi",
+      "text": "Bez skrivenih troškova. Unapred vam prikazujemo cenu svake usluge kako biste mogli da donesete odluku u miru."
+    }
+  ],
+  "procedure": [
+    {
+      "step": 1,
+      "title": "Konstatovanje smrti",
+      "description": "Lekar ili dežurni lekar hitne pomoći konstatuje smrt i izdaje lekarsko uverenje o uzroku smrti."
+    },
+    {
+      "step": 2,
+      "title": "Prijava smrti",
+      "description": "Smrt se prijavljuje matičnoj službi opštine na čijoj teritoriji je do nje došlo. Naš tim vam pomaže sa svom dokumentacijom."
+    },
+    {
+      "step": 3,
+      "title": "Prevoz pokojnika",
+      "description": "Naš specijalizovani vozni park preuzima pokojnika i prevozi ga u odgovarajuće prostorije za pripremu."
+    },
+    {
+      "step": 4,
+      "title": "Izbor opreme i usluga",
+      "description": "Zajedno biramo pogrebnu opremu (sanduk, cveće, venci, krst) i određujemo vrstu ispraćaja prema vašim željama i tradiciji."
+    },
+    {
+      "step": 5,
+      "title": "Kompletna administracija",
+      "description": "Preuzimamo svu administrativnu proceduru: dozvola za sahranu, koordinacija sa grobljem, obaveštenje rodbine i oglasi."
+    },
+    {
+      "step": 6,
+      "title": "Oglas i obaveštenje",
+      "description": "Po vašoj želji, pomažemo pri oglašavanju sahrane u novinama i organizujemo obaveštavanje rodbine i prijatelja."
+    },
+    {
+      "step": 7,
+      "title": "Organizacija sahrane ili kremacije",
+      "description": "Koordiniramo sve aspekte sahrane ili kremacije: sveštenika, muziku, transport porodice, mesto ispraćaja."
+    },
+    {
+      "step": 8,
+      "title": "PIO fond — naknada",
+      "description": "Pomažemo vam da predate zahtev za jednokratnu pomoć PIO fonda (85.686 din) i pribavimo svu neophodnu dokumentaciju."
+    },
+    {
+      "step": 9,
+      "title": "Završni administrativni koraci",
+      "description": "Završna dokumentacija: odjava sa zdravstvenog osiguranja, obaveštenje banke, regulisanje zaostavštine po potrebi."
+    }
+  ],
+  "services": [
+    {
+      "slug": "prijava-smrti",
+      "icon": "document",
+      "title": "Prijava smrti i dokumentacija",
+      "description": "Naš tim preuzima kompletan administrativni postupak prijave smrti. Pomažemo vam da pribavite sva neophodna dokumenta na vreme i bez stresa.",
+      "details": [
+        "Asistencija pri prijavi nadležnoj matičnoj službi",
+        "Pribavljanje izvoda iz matične knjige umrlih",
+        "Koordinacija sa mrtvozorničkom službom",
+        "Pomoć pri odjavi sa MUP-a i zdravstvenog osiguranja"
       ]
     },
     {
-      "id": "posni",
-      "name": "Posni meni",
-      "price": "XX.XX0",
-      "currency": "RSD",
-      "priceLabel": "po osobi",
-      "items": [
-        { "course": "Predjelo", "description": "Posno mešano predjelo", "image": null },
-        { "course": "Čorba", "description": "Posna čorba od povrća", "image": null },
-        { "course": "Glavno jelo", "description": "Punjene paprike (posne)", "image": null },
-        { "course": "Salata", "description": "Mešana salata", "image": null },
-        { "course": "Hleb", "description": "Posni hleb", "image": null },
-        { "course": "Piće", "description": "Bezalkoholno piće", "image": null },
-        { "course": "Kolač", "description": "Posni kolači", "image": null }
+      "slug": "prevoz",
+      "icon": "transport",
+      "title": "Prevoz pokojnika",
+      "description": "Raspolažemo savremenim i reprezentativnim voznim parkom za dostojanstven prevoz pokojnika na teritoriji Beograda i cele Srbije.",
+      "details": [
+        "Prevoz unutar Beograda 0-24h",
+        "Međugradski i međunarodni prevoz",
+        "Diskretna i brza usluga",
+        "Stručno obučeno osoblje"
+      ]
+    },
+    {
+      "slug": "organizacija",
+      "icon": "ceremony",
+      "title": "Organizacija sahrane i kremacije",
+      "description": "Kompletna organizacija ispraćaja — od prvog telefonskog poziva do poslednjeg pozdrava. Sahrana ili kremacija prema vašim željama i tradiciji.",
+      "details": [
+        "Organizacija crkvene sahrane ili građanskog ispraćaja",
+        "Koordinacija sa grobljem i mrtvačnicom",
+        "Organizacija kremacije u krematorijumu",
+        "Izbor mesta na groblju"
+      ]
+    },
+    {
+      "slug": "oprema",
+      "icon": "wreath",
+      "title": "Izrada buketa, suza i venaca",
+      "description": "Naša cvećarnica kreira pažljivo komponovane funeralne aranžmane — od diskretnih buketa do reprezentativnih venaca sa trakom.",
+      "details": [
+        "Sveži cvetni aranžmani po narudžbini",
+        "Venci sa trakom i posvetom",
+        "Cvećarnica otvorena 0-24h",
+        "Dostava na adresu sahrane"
       ]
     }
   ],
-  "extras": [
-    { "name": "Kafa", "price": "po dogovoru" },
-    { "name": "Piće (alkoholno)", "price": "po dogovoru" },
-    { "name": "Torta po narudžbini", "price": "po dogovoru" }
-  ],
-  "location": {
-    "title": "Lokacija",
-    "address": "Groblje Orlovača 28, Beograd",
-    "city": "Beograd",
-    "district": "Rakovica",
-    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2833.3!2d20.45!3d44.76!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDQ1JzM2LjAiTiAyMMKwMjcnMDAuMCJF!5e0!3m2!1ssr!2srs!4v1234567890",
-    "mapDirectionsUrl": "https://maps.google.com/?q=Groblje+Orlova%C4%8Da+28+Beograd",
-    "highlights": [
-      { "label": "Direktan ulaz", "icon": "door" },
-      { "label": "Parking dostupan", "icon": "parking" },
-      { "label": "Pored groblja Orlovača", "icon": "location" }
+  "equipment": {
+    "categories": ["Sanduci", "Krstovi", "Cveće i Venci", "Anđeli i Ukras"],
+    "items": [
+      {
+        "id": "s1",
+        "category": "Sanduci",
+        "name": "Premium hrast",
+        "description": "Sanduk od masivnog hrasta sa svilenom unutrašnjošću i bronzanim okujem. Elegantna finalizacija u nekoliko nijansi.",
+        "image": null
+      },
+      {
+        "id": "s2",
+        "category": "Sanduci",
+        "name": "Klasični orah",
+        "description": "Sanduk od orahovine sa ručno poliranom površinom i satenom obloge u krem ili beloj boji.",
+        "image": null
+      },
+      {
+        "id": "s3",
+        "category": "Sanduci",
+        "name": "Metalni — bronza",
+        "description": "Metalni sanduk sa bronzanom završnom obradom, pojačanim olukom i hermetičkim zatvaranjem.",
+        "image": null
+      },
+      {
+        "id": "s4",
+        "category": "Sanduci",
+        "name": "Beli — svečani",
+        "description": "Svečani beli sanduk sa belom satenom oblozom i dekorativnim okujem.",
+        "image": null
+      },
+      {
+        "id": "k1",
+        "category": "Krstovi",
+        "name": "Procesijski krst — hrastov",
+        "description": "Visoki procesijski krst od hrastovine sa ručno rezbarenim ukrasom. Visina 180 cm.",
+        "image": null
+      },
+      {
+        "id": "k2",
+        "category": "Krstovi",
+        "name": "Metalni krst — pozlaćen",
+        "description": "Metalni procesijski krst sa zlatnom patinom i ikonicom u sredini.",
+        "image": null
+      },
+      {
+        "id": "k3",
+        "category": "Krstovi",
+        "name": "Mramorni krst",
+        "description": "Mramorni krst za postavljanje na sanduk ili grob. Dostupan u belom i sivom mramoru.",
+        "image": null
+      },
+      {
+        "id": "cv1",
+        "category": "Cveće i Venci",
+        "name": "Venac sa trakom",
+        "description": "Veliki cvetni venac prečnika 80 cm sa personalizovanom trakom i posvetnim tekstom.",
+        "image": null
+      },
+      {
+        "id": "cv2",
+        "category": "Cveće i Venci",
+        "name": "Buket bele ruže",
+        "description": "Klasični funeralni buket od 20 belih ruža sa zelenim lisnatim ukrasom.",
+        "image": null
+      },
+      {
+        "id": "cv3",
+        "category": "Cveće i Venci",
+        "name": "Aranžman za sanduk",
+        "description": "Pun cvetni aranžman za postavljanje na sanduk, kombinacija belog i krem cveća.",
+        "image": null
+      },
+      {
+        "id": "cv4",
+        "category": "Cveće i Venci",
+        "name": "Suze",
+        "description": "Funeralne suze od svežeg cveća, oblikovane u kapljicu, sa trakom i posvetom.",
+        "image": null
+      },
+      {
+        "id": "a1",
+        "category": "Anđeli i Ukras",
+        "name": "Anđeo — beli gips",
+        "description": "Ručno rađeni beli anđeo od gipsa za postavljanje na sanduk ili grob. Visina 40 cm.",
+        "image": null
+      },
+      {
+        "id": "a2",
+        "category": "Anđeli i Ukras",
+        "name": "Anđeo — bronzana patina",
+        "description": "Dekorativni anđeo od poliresina sa bronzanom finiš obradom. Visina 35 cm.",
+        "image": null
+      },
+      {
+        "id": "a3",
+        "category": "Anđeli i Ukras",
+        "name": "Funeralne sveće",
+        "description": "Set od 6 belih sveća u zlatnim svećnjacima za ceremonijalni ispraćaj.",
+        "image": null
+      }
+    ]
+  },
+  "guide": {
+    "intro": "Znamo da su ovi trenuci izuzetno teški. Ovaj vodič vas korak po korak provodi kroz ceo proces kako biste znali šta da očekujete.",
+    "pioInfo": {
+      "title": "Pravo na naknadu iz PIO fonda",
+      "amount": "85.686",
+      "description": "Ako je pokojnik bio penzioner ili osigurano lice, porodica ima zakonsko pravo na jednokratnu pogrebnu pomoć od 85.686 dinara (iznos za 2024. godinu). Ova naknada se isplaćuje od strane PIO fonda Srbije.",
+      "documents": [
+        "Izvod iz matične knjige umrlih (original)",
+        "Fotokopija lične karte podnosioca zahteva",
+        "Fotokopija tekućeg računa podnosioca",
+        "Dokaz o srodstvu sa pokojnikom",
+        "Fotokopija penzijskog čeka ili potvrde o osiguranju pokojnika",
+        "Račun pogrebnog preduzeća (original)"
+      ],
+      "note": "Naš tim vam pomaže da prikupite sva neophodna dokumenta i podnesete zahtev."
+    },
+    "customs": [
+      {
+        "title": "Pravoslavni pogrebni obred",
+        "description": "Pravoslavna sahrana podrazumeva čitanje parastonih molitvi, pomen u crkvi i zakopavanje u posvećenoj zemlji. Naši sveštenici su uvek dostupni."
+      },
+      {
+        "title": "Kremacija",
+        "description": "Kremacija je sve prisutnija u Srbiji. Posle kremacije, urna može biti zakopana u porodičnoj grobnici, čuvana u kapelici ili razvejana na posebnom mestu."
+      },
+      {
+        "title": "Pomen i parastos",
+        "description": "Tradicionalno se organizuju parasti na 7. dan, 40. dan, 6 meseci i godišnjicu smrti. Pomažemo pri organizaciji svake komemoracije."
+      }
     ]
   },
   "faq": [
     {
-      "id": "faq-1",
-      "question": "Koliki je kapacitet restorana?",
-      "answer": "Restoran Sedef ima kapacitet od 80 mesta. Za grupe veće od 80 osoba, molimo Vas da nas kontaktirate telefonom kako bismo pronašli odgovarajuće rešenje."
+      "id": 1,
+      "question": "Kada da vas pozovem?",
+      "answer": "Možete nas pozvati u bilo koje vreme — radimo 00-24h, 365 dana u godini. Preporučujemo da nas kontaktirate odmah nakon što lekar konstatuje smrt, kako bismo odmah koordinisali sledeće korake."
     },
     {
-      "id": "faq-2",
-      "question": "Da li je potrebna rezervacija?",
-      "answer": "Da, preporučujemo rezervaciju unapred. Možete nas pozvati na telefon svakog dana od 07 do 23 sata. Rezervacija obezbeđuje organizovanu i dostojanstvenu trpezu bez brige."
+      "id": 2,
+      "question": "Koliko košta osnovna sahrana?",
+      "answer": "Cena sahrane zavisi od odabrane opreme i usluga. Nudimo nekoliko paketa prilagođenih različitim budžetima. Svim porodicama pre odluke dajemo pismenu ponudu sa preciznim cenama — bez skrivenih troškova."
     },
     {
-      "id": "faq-3",
-      "question": "Koje je radno vreme restorana?",
-      "answer": "Restoran je otvoren svakog dana od 07 do 20 sati. Rezervacije i dogovori su mogući telefonom od 07 do 23 sata."
+      "id": 3,
+      "question": "Da li vi preuzimate svu dokumentaciju?",
+      "answer": "Da. Naš tim preuzima ceo administrativni proces — od prijave smrti do predaje dokumentacije PIO fondu. Porodica ne mora da čeka u redovima ili obilazi šaltere."
     },
     {
-      "id": "faq-4",
-      "question": "Da li postoji parking?",
-      "answer": "Da, restoran raspolaže parking mestima. Ulaz i parking su dostupni direktno pored restorana, što olakšava dolazak i za starije goste."
+      "id": 4,
+      "question": "Koliko brzo možete organizovati sahranu?",
+      "answer": "U Beogradu, sahrana se po pravilu organizuje unutar 48-72 sata od momenta kontaktiranja. Prevoz pokojnika organizujemo isti dan."
     },
     {
-      "id": "faq-5",
-      "question": "Da li organizujete i druge događaje osim parastosa?",
-      "answer": "Pored parastosa, restoran je otvoren i za svakodnevne goste – kafa, piće i obroci. Za druge privatne svečanosti molimo Vas da nas kontaktirate telefonom."
+      "id": 5,
+      "question": "Da li pružate usluge kremacije?",
+      "answer": "Da, organizujemo kremaciju u beogradskom krematorijumu, kao i sve propratne usluge — od prvog kontakta do predaje urne porodici."
     }
   ],
-  "contact": {
-    "title": "Kontakt",
-    "phone": "+381653030302",
-    "phoneDisplay": "065 303 0 302",
-    "reservationHours": "07 – 23h",
-    "workingHours": "07 – 20h",
-    "email": "restoran.sedef1@gmail.com",
-    "address": "Groblje Orlovača 28, Beograd"
-  },
   "footer": {
-    "name": "Restoran Sedef",
-    "tagline": "Restoran za parastose i pomen trpeze pored groblja Orlovača u Beogradu. Sopstvena kuhinja, 80 mesta i potpuna organizacija.",
-    "address": "Groblje Orlovača 28, Beograd",
-    "phone": "+381653030302",
-    "phoneDisplay": "065 303 0 302",
-    "email": "restoran.sedef1@gmail.com",
-    "workingHours": "07:00 – 20:00",
-    "reservationHours": "07:00 – 23:00",
-    "copyright": "2026 Restoran Sedef. Sva prava zadržana.",
-    "mapsUrl": "https://maps.google.com/?q=Groblje+Orlova%C4%8Da+28+Beograd"
+    "tagline": "Saosećajna podrška u trenucima oproštaja.",
+    "copyright": "© 2024 Pogrebno preduzeće Antić. Sva prava zadržana.",
+    "municipalities": [
+      "Novi Beograd", "Zemun", "Voždovac", "Rakovica",
+      "Čukarica", "Palilula", "Savski Venac", "Stari Grad",
+      "Zvezdara", "Grocka", "Surčin", "Obrenovac"
+    ]
   }
 }
