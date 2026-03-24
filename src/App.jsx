@@ -1,8 +1,15 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { useContent } from './hooks/useContent'
 import { useCookieConsent } from './hooks/useCookieConsent'
 import { buildSchema } from './utils/schema'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  return null
+}
 
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
@@ -34,6 +41,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Helmet>
         <title>{data.seo?.title}</title>
         <meta name="description" content={data.seo?.description} />

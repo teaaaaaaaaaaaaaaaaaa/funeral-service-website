@@ -132,7 +132,7 @@ export default function ContactSection({ business }) {
                              hover:bg-[#7360F2]/20 transition-colors"
                 >
                   <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5" aria-hidden="true">
-                    <path d="M11.398.002C9.473.028 5.331.344 3.014 2.467 1.03 4.451.371 7.34.287 9.977c-.083 2.636-.187 7.57 4.625 8.903v2.05s-.031.809.505.97c.645.19 1.02-.411 1.632-1.098.337-.359.8-.89 1.149-1.273 3.165.266 5.6-.342 5.875-.431.639-.206 4.254-.67 4.844-5.467.606-4.949-.295-8.076-1.976-9.49h-.001c-.47-.4-2.331-1.758-5.542-1.138zm.12 1.474c2.717-.485 4.296.595 4.676.931 1.39 1.161 2.109 3.899 1.59 8.147-.49 4.007-3.441 4.276-3.975 4.445-.232.075-2.437.623-5.213.437 0 0-2.068 2.496-2.713 3.142-.101.102-.217.144-.295.124-.11-.028-.139-.16-.137-.353l.022-3.062s-.001-.015-.011-.022c-4.084-1.133-3.852-5.4-3.784-7.716.066-2.315.629-4.795 2.32-6.485 1.952-1.828 5.494-1.773 7.52-1.59zm-1.03 2.96c-.155 0-.315.057-.435.174a.582.582 0 000 .839l.3.297a2.66 2.66 0 01.013 3.774l-.036.037.033.032c.29.285.58.57.87.856.293.288.584.579.876.868l.036.036.04-.04a2.66 2.66 0 013.782.003l.298.293c.237.234.237.612 0 .846a.606.606 0 01-.437.175.606.606 0 01-.438-.175l-.295-.292a1.444 1.444 0 00-2.023-.003l-.016.016.019.018c-.288-.284-.576-.568-.865-.852l.029-.026a1.445 1.445 0 00.001-2.033l-.298-.298a.606.606 0 01-.175-.43c0-.164.063-.319.175-.432l.296-.294.001-.002a1.444 1.444 0 000-2.028l-.3-.297a.614.614 0 00-.432-.183zM9.9 5.72a4.022 4.022 0 00-4.022 4.021.584.584 0 001.168 0 2.855 2.855 0 012.854-2.854.584.584 0 000-1.167zm0 2.1a1.921 1.921 0 00-1.922 1.922.584.584 0 001.168 0 .752.752 0 01.754-.755.584.584 0 000-1.167z"/>
+                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm4.441 16.892c-2.102.144-7.072.144-9.169 0C4.454 16.72 3.978 15.33 3.95 12c.028-3.34.509-4.72 3.322-4.892 2.097-.144 7.067-.144 9.169 0 2.813.172 3.294 1.552 3.322 4.892-.028 3.34-.514 4.72-3.322 4.892zm-5.441-7.5c-.55 0-.996.448-.996 1s.446 1 .996 1c.55 0 .996-.448.996-1s-.446-1-.996-1zm-2.5 0c-.55 0-.996.448-.996 1s.446 1 .996 1c.55 0 .996-.448.996-1s-.446-1-.996-1zm5 0c-.55 0-.996.448-.996 1s.446 1 .996 1c.55 0 .996-.448.996-1s-.446-1-.996-1z"/>
                   </svg>
                   Viber
                 </a>
@@ -152,6 +152,35 @@ export default function ContactSection({ business }) {
               </div>
             )}
           </div>
+        </div>
+
+        {/* Google Maps */}
+        <div className="mt-14">
+          <span className="section-label">Lokacija — Groblje Orlovača</span>
+          <div className="mt-4 border border-antic-border overflow-hidden" style={{ height: '380px' }}>
+            <iframe
+              title="Groblje Orlovača — Google Maps"
+              src="https://maps.google.com/maps?q=Groblje+Orlova%C4%8Da+Beograd&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0, filter: 'grayscale(30%) invert(3%) contrast(95%)' }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              aria-label="Mapa — Groblje Orlovača, Beograd"
+            />
+          </div>
+          <p className="font-lato text-sm text-antic-muted mt-3">
+            Groblje Orlovača, Beograd —
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Groblje+Orlova%C4%8Da+Beograd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-antic-gold hover:text-antic-gold-light transition-colors ml-1"
+            >
+              Otvori u Google Maps →
+            </a>
+          </p>
         </div>
       </div>
     </section>

@@ -43,7 +43,7 @@ function ServiceCard({ service, index }) {
       {service.details?.length > 0 && (
         <ul className="space-y-2 mb-6">
           {service.details.map((d, i) => (
-            <li key={i} className="flex items-start gap-2 font-lato text-sm text-antic-muted">
+            <li key={i} className="flex items-start gap-2 font-lato text-base text-antic-muted">
               <span className="text-antic-gold mt-0.5 flex-shrink-0">✦</span>
               {d}
             </li>

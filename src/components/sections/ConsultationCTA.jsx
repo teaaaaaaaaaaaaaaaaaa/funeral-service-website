@@ -8,18 +8,18 @@ export default function ConsultationCTA({ phone, phoneDisplay }) {
       <div className="absolute inset-0 bg-gradient-to-r from-antic-black via-antic-marble to-antic-black opacity-70" />
 
       <div className="relative section-container text-center">
-        <Sparkle size={28} className="text-antic-gold/30 mx-auto mb-6" />
+        <Sparkle size={15} className="text-antic-gold/30 mx-auto mb-6" />
 
         <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl text-antic-cream mb-5 font-semibold">
-          Zakažite Konsultacije
+          Zakažite konsultacije
         </h2>
-        <p className="font-garamond text-xl text-antic-light mb-10 max-w-xl mx-auto leading-relaxed">
+        <p className="font-garamond text-2xl md:text-3xl text-antic-light mb-12 max-w-2xl mx-auto leading-relaxed">
           Naš tim je dostupan 24 sata dnevno, 365 dana u godini. Pozovite nas ili zakažite sastanak.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link to="/kontakt" className="btn-gold">
-            Zakažite Konsultacije
+          <Link to="/kontakt" className="btn-gold hover:bg-transparent hover:border hover:border-antic-gold hover:text-antic-gold">
+            Zakažite konsultacije
           </Link>
           {phone && (
             <a href={`tel:${phone.replace(/\s/g, '')}`} className="btn-outline-gold">

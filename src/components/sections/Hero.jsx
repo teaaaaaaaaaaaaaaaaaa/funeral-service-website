@@ -36,7 +36,7 @@ export default function Hero({ hero, phone }) {
         {/* Decorative line */}
         <div className="flex items-center gap-4 mb-8">
           <div className="h-px w-16 bg-antic-gold/60" />
-          <Sparkle size={14} className="text-antic-gold" />
+          <Sparkle size={15} className="text-antic-gold" />
           <div className="h-px w-16 bg-antic-gold/60" />
         </div>
 
@@ -57,7 +57,7 @@ export default function Hero({ hero, phone }) {
           className="flex flex-col sm:flex-row items-center gap-4 animate-fade-in-up"
           style={{ animationDelay: '0.3s' }}
         >
-          <Link to="/kontakt" className="btn-gold">
+          <Link to="/kontakt" className="btn-gold hover:bg-transparent hover:border hover:border-antic-gold hover:text-antic-gold">
             {hero.cta}
           </Link>
           {phone && (
@@ -79,8 +79,8 @@ export default function Hero({ hero, phone }) {
       </div>
 
       {/* Decorative corner sparkles */}
-      <Sparkle size={36} className="absolute bottom-10 right-10 text-antic-gold/15 hidden md:block" />
-      <Sparkle size={20} className="absolute top-28 left-10 text-antic-gold/10 hidden md:block" />
+      <Sparkle size={15} className="absolute bottom-10 right-10 text-antic-gold/15 hidden md:block" />
+      <Sparkle size={15} className="absolute top-28 left-10 text-antic-gold/10 hidden md:block" />
     </section>
   )
 }

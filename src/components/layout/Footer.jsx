@@ -41,14 +41,14 @@ export default function Footer({ data }) {
           {/* Col 2: Navigacija */}
           <nav aria-label="Footer navigacija" className="flex flex-col gap-3">
             <span className="section-label">Navigacija</span>
-            <Link to="/" className="font-lato text-sm text-antic-light hover:text-antic-gold transition-colors">
+            <Link to="/" className="font-lato text-base text-antic-light hover:text-antic-gold transition-colors">
               Početna
             </Link>
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 to={link.href}
-                className="font-lato text-sm text-antic-light hover:text-antic-gold transition-colors"
+                className="font-lato text-base text-antic-light hover:text-antic-gold transition-colors"
               >
                 {link.label}
               </Link>
@@ -62,7 +62,7 @@ export default function Footer({ data }) {
               <Link
                 key={s.href}
                 to={s.href}
-                className="font-lato text-sm text-antic-light hover:text-antic-gold transition-colors"
+                className="font-lato text-base text-antic-light hover:text-antic-gold transition-colors"
               >
                 {s.label}
               </Link>
@@ -76,7 +76,7 @@ export default function Footer({ data }) {
             {business?.phone && (
               <a
                 href={`tel:${business.phone.replace(/\s/g, '')}`}
-                className="font-lato text-sm text-antic-gold hover:text-antic-gold-light transition-colors inline-flex items-center gap-2 font-medium"
+                className="font-lato text-base text-antic-gold hover:text-antic-gold-light transition-colors inline-flex items-center gap-2 font-medium"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 flex-shrink-0" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
@@ -87,7 +87,9 @@ export default function Footer({ data }) {
 
             {business?.email && (
               <a
-                href={`mailto:${business.email}`}
+                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${business.email}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-lato text-sm text-antic-light hover:text-antic-gold transition-colors inline-flex items-center gap-2"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 flex-shrink-0 text-antic-muted" aria-hidden="true">
@@ -97,13 +99,20 @@ export default function Footer({ data }) {
               </a>
             )}
 
-            <span className="font-lato text-sm text-antic-light inline-flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 flex-shrink-0 text-antic-muted" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-              </svg>
-              {business?.address}
-            </span>
+            {business?.address && (
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(business.address)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-lato text-sm text-antic-light hover:text-antic-gold transition-colors inline-flex items-center gap-2"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 flex-shrink-0 text-antic-muted" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+                {business.address}
+              </a>
+            )}
 
             <span className="font-lato text-sm text-antic-muted inline-flex items-center gap-2 mt-1">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 flex-shrink-0" aria-hidden="true">
@@ -113,26 +122,6 @@ export default function Footer({ data }) {
             </span>
           </address>
         </div>
-
-        {/* SEO municipality links */}
-        {footer?.municipalities?.length > 0 && (
-          <div className="mt-12 pt-8 border-t border-antic-border">
-            <p className="font-lato text-xs text-antic-muted mb-3 tracking-widest uppercase">
-              Pogrebne usluge po opštinama
-            </p>
-            <div className="flex flex-wrap gap-x-4 gap-y-2">
-              {footer.municipalities.map((m) => (
-                <Link
-                  key={m}
-                  to="/usluge"
-                  className="font-lato text-xs text-antic-muted hover:text-antic-light transition-colors"
-                >
-                  Pogrebne usluge {m}
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
 
         {/* Bottom bar */}
         <div className="mt-8 pt-6 border-t border-antic-border flex flex-col sm:flex-row items-center justify-between gap-3">

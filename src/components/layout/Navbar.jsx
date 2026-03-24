@@ -47,19 +47,19 @@ export default function Navbar({ phone, phoneDisplay }) {
         {phone && (
           <a
             href={`tel:${phone.replace(/\s/g, '')}`}
-            className="hidden md:inline-flex items-center gap-2.5 px-4 py-2
+            className="group hidden md:inline-flex items-center gap-3 px-5 py-2.5
                        border border-antic-gold/60 text-antic-gold
-                       font-lato text-sm tracking-wide
+                       font-lato tracking-wide
                        transition-all duration-300
                        hover:bg-antic-gold hover:text-antic-black flex-shrink-0"
             aria-label={`Pozovite nas: ${phoneDisplay}`}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-6 h-6 flex-shrink-0" aria-hidden="true">
               <path fillRule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z" clipRule="evenodd" />
             </svg>
-            <span className="flex flex-col leading-none">
+            <span className="flex flex-col leading-snug">
               <span className="text-xs text-antic-gold/70 font-normal">Dežurna služba</span>
-              <span>{phoneDisplay || phone}</span>
+              <span className="text-base font-semibold">{phoneDisplay || phone}</span>
             </span>
           </a>
         )}
